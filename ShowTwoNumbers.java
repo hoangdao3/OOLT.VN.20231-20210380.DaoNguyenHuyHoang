@@ -1,7 +1,7 @@
 import java.lang.reflect.Array;
 import java.util.*;
 import javax.swing.JOptionPane;
-public class Main {
+public class ShowTwoNumbers {
     public static void main(String[] args) {
         String strNum1, strNum2;
         String strNotification = "You've just entered: ";
