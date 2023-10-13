@@ -1,0 +1,35 @@
+Questions:
+- What happens if users choose “Cancel”?
+- How to customize the options to users, e.g. only two options: “Yes” and “No”, OR “I do”
+and “I don’t” (Suggestion: Use Javadocs or using Eclipse/Netbean IDE help).
+
+Answer:
+
+Câu 1:
+
+Nếu người dùng chọn "Cancel" trong hộp thoại xác nhận (showConfirmDialog), thì biến option sẽ chứa giá trị JOptionPane.CANCEL_OPTION, 
+vì nút "Cancel" tương ứng với giá trị này. Có thể xử lý tùy chọn "Cancel" một cách rõ ràng và hiển thị một thông báo khác nếu muốn cung cấp 
+một phản ứng riêng cho nó.
+
+
+Câu 2:
+
+Để tùy chỉnh các tùy chọn hiển thị cho người dùng trong JOptionPane.showConfirmDialog, có thể sử dụng optionType để chỉ định loại tùy chọn và options để cung cấp các nhãn cho các nút. 
+Ví dụ dưới đây giải thích cách hiển thị hai tùy chọn, "Có" và "Không," trong hộp thoại xác nhận:
+int option = JOptionPane.showConfirmDialog(
+    null, 
+    "Bạn có muốn đổi sang vé hạng nhất không?", 
+    "Xác nhận", 
+    JOptionPane.YES_NO_OPTION
+);
+
+String message = (option == JOptionPane.YES_OPTION) ? "Bạn đã chọn: Có" : "Bạn đã chọn: Không";
+JOptionPane.showMessageDialog(null, message);
+
+System.exit(0);
+Trong ví dụ này, chúng ta sử dụng JOptionPane.YES_NO_OPTION cho optionType, và nó sẽ hiển thị hai nút "Có" và "Không" trong hộp thoại xác nhận. 
+Sau đó, dựa vào lựa chọn của người dùng, chúng ta hiển thị một thông báo với nội dung tương ứng.
+
+
+Trong mã này, cuộc gọi JOptionPane.showConfirmDialog sử dụng JOptionPane.YES_NO_OPTION cho optionType, 
+sẽ hiển thị nút "Có" và "Không" trong hộp thoại.
