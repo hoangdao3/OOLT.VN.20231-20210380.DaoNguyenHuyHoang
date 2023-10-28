@@ -4,9 +4,18 @@ public class DigitalVideoDisc {
     private String director;
     private int length;
     private float cost;
-
+    private  int id;
+    private static int nbDigitalVideoDisc;
     public String getTitle() {
         return title;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public static int getNbDigitalVideoDisc() {
+        return nbDigitalVideoDisc;
     }
 
     public void setTitle(String title) {
@@ -35,6 +44,14 @@ public class DigitalVideoDisc {
 
     public void setLength(int length) {
         this.length = length;
+    }
+
+    public DigitalVideoDisc(String catetory, String director, int length) {
+        this.catetory = catetory;
+        this.director = director;
+        this.length = length;
+        nbDigitalVideoDisc++;
+        id = nbDigitalVideoDisc;
     }
 
     public DigitalVideoDisc(String title, String catetory, String director, float cost) {
