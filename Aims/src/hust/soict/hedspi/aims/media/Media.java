@@ -6,7 +6,7 @@ public abstract class Media {
     protected String catetory;
     protected float cost;
 
-    public Media(int id, String title, String category, float cost) {
+    public Media() {
     }
 
     // Constructors, if needed, can be added here

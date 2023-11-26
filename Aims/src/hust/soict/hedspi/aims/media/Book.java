@@ -7,7 +7,7 @@ public class Book extends Media {
     private ArrayList<String> authors;
 
     public Book(int id, String title, String category, float cost) {
-        super(id, title, category, cost);
+        super();
     }
 
     public ArrayList<String> getAuthors() {

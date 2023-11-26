@@ -1,6 +1,6 @@
 package Aims.src.hust.soict.hedspi.aims.media;
 
-public class DigitalVideoDisc extends Media {
+public class DigitalVideoDisc extends Media implements Playable {
     private String director;
     private int length;
     private float cost;
@@ -26,8 +26,18 @@ public class DigitalVideoDisc extends Media {
     public void setLength(int length) {
         this.length = length;
     }
+    @Override
+    public void play() {
+        System.out.println("Playing DVD: " + this.getTitle());
+        System.out.println("DVD length: " + this.getLength());
+    }
+
+    public DigitalVideoDisc(int id, String title, String category, float cost) {
+        super();
+    }
 
     public DigitalVideoDisc(String catetory, String director, int length) {
+        super();
         this.catetory = catetory;
         this.director = director;
         this.length = length;
@@ -44,6 +54,7 @@ public class DigitalVideoDisc extends Media {
     }
 
     public DigitalVideoDisc(String title, String catetory, String director, float cost) {
+        super();
         this.title = title;
         this.catetory = catetory;
         this.director = director;
@@ -51,16 +62,19 @@ public class DigitalVideoDisc extends Media {
     }
 
     public DigitalVideoDisc(String title, String catetory, float cost) {
+        super();
         this.title = title;
         this.catetory = catetory;
         this.cost = cost;
     }
 
     public DigitalVideoDisc(String title) {
+        super();
         this.title = title;
     }
 
     public DigitalVideoDisc(String title, String catetory, String director, int length, float cost) {
+        super();
         this.title = title;
         this.catetory = catetory;
         this.director = director;
