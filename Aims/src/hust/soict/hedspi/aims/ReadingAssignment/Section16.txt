@@ -1,0 +1,17 @@
+Ưu điểm của đa hình:
+
++ Tính linh hoạt và tái sử dụng mã: Đa hình cho phép các đối tượng được xử lý dựa trên loại của chúng khi chúng chạy, điều này giúp mã có thể được tái sử dụng một cách linh hoạt với các đối tượng khác nhau.
++ Dễ mở rộng và bảo trì: Đa hình giúp cho việc mở rộng mã trở nên dễ dàng hơn. Bạn có thể thêm mới các lớp con hoặc thay đổi hành vi của các lớp hiện có mà không cần sửa đổi các lớp cha.
++ Tăng tính tổng quát của mã: Đa hình giúp tạo ra mã chung cho nhiều lớp khác nhau bằng cách sử dụng các phương thức và giao diện chung, giúp tăng tính tái sử dụng và tổng quát hóa.
+
+
+- How is Inheritance useful to achieve Polymorphism in Java?
+
++ Kế thừa trong Java cho phép một lớp (lớp con) kế thừa các thuộc tính và phương thức từ một lớp khác (lớp cha).
++ Bằng cách sử dụng kế thừa, bạn có thể tạo ra các lớp con mới dựa trên các lớp đã có sẵn (lớp cha), và mở rộng hoặc thay đổi hành vi của chúng.
++ Kế thừa cũng là một trong những cơ chế cơ bản để đạt được tính đa hình trong Java. Việc gọi phương thức của một đối tượng có thể thực hiện một cách khác nhau tùy thuộc vào loại của đối tượng đó.
+
+Sự khác biệt giữa Đa hình và Kế thừa trong Java:
+
++ Đa hình là khả năng một đối tượng có thể thể hiện nhiều hình dạng khác nhau. Trong Java, đa hình có thể đạt được thông qua kế thừa, ghi đè phương thức và các giao diện.
++ Kế thừa là khả năng một lớp mới có thể thừa hưởng các thuộc tính và phương thức từ một lớp đã tồn tại (lớp cha). Kế thừa giúp tạo ra mối quan hệ "lớp cha - lớp con" và cho phép mở rộng và tái sử dụng mã.
