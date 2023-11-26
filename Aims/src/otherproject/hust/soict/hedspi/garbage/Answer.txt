@@ -1,0 +1,18 @@
+Tất cả các class mà bạn muốn sắp xếp chúng theo một quy tắc nhất định nên implement interface Comparable. 
+Điều này cho phép bạn xác định cách so sánh giữa hai instance của class đó.
+
+Trong các class đó, bạn cần triển khai phương thức compareTo() để thể hiện thứ tự sắp xếp mong muốn. 
+Ví dụ, trong class Media hoặc DVD, phương thức compareTo() sẽ so sánh các instance dựa trên tiêu chí như title, length, hoặc cost để biểu diễn thứ tự sắp xếp mong muốn.
+
+Tuy nhiên, không thể có hai quy tắc sắp xếp khác nhau trong một phương thức compareTo(). Bạn không thể sửa đổi phương thức này để có nhiều quy tắc sắp xếp khác nhau. 
+Thay vào đó, bạn có thể tạo các comparator khác nhau, mỗi comparator định nghĩa một quy tắc sắp xếp riêng biệt bằng cách implement interface Comparator.
+
+Nếu DVDs có quy tắc sắp xếp khác biệt so với các loại phương tiện khác (ví dụ: theo tiêu đề, độ dài giảm dần, sau đó giá thành), 
+bạn có thể triển khai phương thức compareTo() trong class DVD với logic cụ thể cho DVDs dựa trên quy tắc sắp xếp đó. 
+Cách làm này cho phép so sánh các instance của DVDs dựa trên quy tắc này. Đối với các loại phương tiện khác, phương thức compareTo() của chúng có thể tuân theo quy tắc khác, giữ các triển khai riêng biệt dựa trên từng class.
+
+
+
+
+
+
