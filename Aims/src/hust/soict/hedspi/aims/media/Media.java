@@ -6,6 +6,9 @@ public abstract class Media {
     protected String catetory;
     protected float cost;
 
+    public Media(int id, String title, String category, float cost) {
+    }
+
     // Constructors, if needed, can be added here
 
     // Getters and setters for the fields

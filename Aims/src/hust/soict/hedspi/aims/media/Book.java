@@ -6,6 +6,10 @@ import java.util.ArrayList;
 public class Book extends Media {
     private ArrayList<String> authors;
 
+    public Book(int id, String title, String category, float cost) {
+        super(id, title, category, cost);
+    }
+
     public ArrayList<String> getAuthors() {
         return authors;
     }
