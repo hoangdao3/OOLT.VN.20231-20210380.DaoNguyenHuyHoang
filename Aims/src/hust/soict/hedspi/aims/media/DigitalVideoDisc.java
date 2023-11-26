@@ -1,3 +1,5 @@
+package Aims.src.hust.soict.hedspi.aims.media;
+
 public class DigitalVideoDisc {
     private String title;
     private String catetory;
@@ -52,6 +54,14 @@ public class DigitalVideoDisc {
         this.length = length;
         nbDigitalVideoDisc++;
         id = nbDigitalVideoDisc;
+    }
+    public boolean isMatch(String title) {
+        return this.title.toLowerCase().equals(title.toLowerCase());
+    }
+
+    @Override
+    public String toString() {
+        return "DVD - " + this.title + " - " + this.catetory + " - " + this.director + " - " + this.length + ": " + this.cost + " $";
     }
 
     public DigitalVideoDisc(String title, String catetory, String director, float cost) {

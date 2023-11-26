@@ -1,6 +1,6 @@
-import java.text.DecimalFormat;
+package Aims.src;
 
-import static java.util.Collections.swap;
+import Aims.src.hust.soict.hedspi.aims.media.DigitalVideoDisc;
 
 public class Main {
     public static void main(String[] args) {
