@@ -1,36 +1,15 @@
 package Aims.src.hust.soict.hedspi.aims.media;
 
-public class DigitalVideoDisc {
-    private String title;
-    private String catetory;
+public class DigitalVideoDisc extends Media {
     private String director;
     private int length;
     private float cost;
-    private  int id;
     private static int nbDigitalVideoDisc;
-    public String getTitle() {
-        return title;
-    }
-
-    public int getId() {
-        return id;
-    }
 
     public static int getNbDigitalVideoDisc() {
         return nbDigitalVideoDisc;
     }
 
-    public void setTitle(String title) {
-        this.title = title;
-    }
-
-    public String getCatetory() {
-        return catetory;
-    }
-
-    public void setCatetory(String catetory) {
-        this.catetory = catetory;
-    }
 
     public String getDirector() {
         return director;

@@ -1,45 +1,10 @@
-package hust.soict.dsai.aims.media;
+package Aims.src.hust.soict.hedspi.aims.media;
 
+//import hust.soict.hedspi.aims.media.Media;
 import java.util.ArrayList;
 
-public class Book {
-    private int id;
-    private String title;
-    private String category;
-    private float cost;
+public class Book extends Media {
     private ArrayList<String> authors;
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public String getTitle() {
-        return title;
-    }
-
-    public void setTitle(String title) {
-        this.title = title;
-    }
-
-    public String getCategory() {
-        return category;
-    }
-
-    public void setCategory(String category) {
-        this.category = category;
-    }
-
-    public float getCost() {
-        return cost;
-    }
-
-    public void setCost(float cost) {
-        this.cost = cost;
-    }
 
     public ArrayList<String> getAuthors() {
         return authors;
