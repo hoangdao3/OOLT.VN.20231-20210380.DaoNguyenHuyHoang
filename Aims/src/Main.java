@@ -1,17 +1,16 @@
 package Aims.src;
 
 import Aims.src.hust.soict.hedspi.aims.media.DigitalVideoDisc;
+import Aims.src.hust.soict.hedspi.aims.media.Media;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
 
-        DigitalVideoDisc jungleDVD = new DigitalVideoDisc("Jungle");
-        DigitalVideoDisc cinderelllaDVD = new DigitalVideoDisc("Cinderella");
-        swapp(jungleDVD, cinderelllaDVD);
-        System.out.println("jungle dvd title: " + jungleDVD.getTitle());
-        System.out.println("cinderella dvd tille: " + cinderelllaDVD.getTitle());
-        changeTitle(jungleDVD, cinderelllaDVD.getTitle());
-        System.out.println("jungle dvd title: " + jungleDVD.getTitle());
+        List<Media> media = new ArrayList<Media>();
+//        media.add(cd)
     }
     public static void swapp(Object o1, Object o2){
         Object tmp = o1;
