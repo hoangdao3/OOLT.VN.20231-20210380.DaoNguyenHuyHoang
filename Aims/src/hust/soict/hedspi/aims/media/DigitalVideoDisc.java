@@ -1,15 +1,47 @@
 package Aims.src.hust.soict.hedspi.aims.media;
 
+<<<<<<< HEAD
 public class DigitalVideoDisc extends Media implements Playable {
     private String director;
     private int length;
     private float cost;
     private static int nbDigitalVideoDisc;
+=======
+public class DigitalVideoDisc {
+    private String title;
+    private String catetory;
+    private String director;
+    private int length;
+    private float cost;
+    private  int id;
+    private static int nbDigitalVideoDisc;
+    public String getTitle() {
+        return title;
+    }
+
+    public int getId() {
+        return id;
+    }
+>>>>>>> remotes/origin/finish-section-6
 
     public static int getNbDigitalVideoDisc() {
         return nbDigitalVideoDisc;
     }
 
+<<<<<<< HEAD
+=======
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public String getCatetory() {
+        return catetory;
+    }
+
+    public void setCatetory(String catetory) {
+        this.catetory = catetory;
+    }
+>>>>>>> remotes/origin/finish-section-6
 
     public String getDirector() {
         return director;
@@ -26,6 +58,7 @@ public class DigitalVideoDisc extends Media implements Playable {
     public void setLength(int length) {
         this.length = length;
     }
+<<<<<<< HEAD
     @Override
     public void play() {
         System.out.println("Playing DVD: " + this.getTitle());
@@ -38,6 +71,10 @@ public class DigitalVideoDisc extends Media implements Playable {
 
     public DigitalVideoDisc(String catetory, String director, int length) {
         super();
+=======
+
+    public DigitalVideoDisc(String catetory, String director, int length) {
+>>>>>>> remotes/origin/finish-section-6
         this.catetory = catetory;
         this.director = director;
         this.length = length;
@@ -54,7 +91,10 @@ public class DigitalVideoDisc extends Media implements Playable {
     }
 
     public DigitalVideoDisc(String title, String catetory, String director, float cost) {
+<<<<<<< HEAD
         super();
+=======
+>>>>>>> remotes/origin/finish-section-6
         this.title = title;
         this.catetory = catetory;
         this.director = director;
@@ -62,19 +102,28 @@ public class DigitalVideoDisc extends Media implements Playable {
     }
 
     public DigitalVideoDisc(String title, String catetory, float cost) {
+<<<<<<< HEAD
         super();
+=======
+>>>>>>> remotes/origin/finish-section-6
         this.title = title;
         this.catetory = catetory;
         this.cost = cost;
     }
 
     public DigitalVideoDisc(String title) {
+<<<<<<< HEAD
         super();
+=======
+>>>>>>> remotes/origin/finish-section-6
         this.title = title;
     }
 
     public DigitalVideoDisc(String title, String catetory, String director, int length, float cost) {
+<<<<<<< HEAD
         super();
+=======
+>>>>>>> remotes/origin/finish-section-6
         this.title = title;
         this.catetory = catetory;
         this.director = director;

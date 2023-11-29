@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 package Aims.src;
 
 import Aims.src.hust.soict.hedspi.aims.media.DigitalVideoDisc;
@@ -11,6 +12,11 @@ import java.text.DecimalFormat;
 
 import static java.util.Collections.swap;
 >>>>>>> remotes/origin/finish-section-4
+=======
+package Aims.src;
+
+import Aims.src.hust.soict.hedspi.aims.media.DigitalVideoDisc;
+>>>>>>> remotes/origin/finish-section-6
 
 public class Main {
     public static void main(String[] args) {
